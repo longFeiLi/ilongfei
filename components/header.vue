@@ -6,7 +6,7 @@
         <div
           :class="{ active: index === navIndex }"
           :key="index"
-          @click="clickNav(item)"
+          @click="clickNav(index)"
           class="item"
           v-for="(item, index) in navList"
         >
@@ -23,48 +23,49 @@ import Vue from 'vue';
 export default Vue.extend({
   components: {},
   data() {
+    let navIndex: Number = 0;
     return {
       navList: [
         {
           name: '首页',
-          url: '/'
+          url: '/',
         },
         {
           name: '技术类',
-          url: '/skill'
+          url: '/skill',
         },
         {
           name: '书籍类',
-          url: ''
+          url: '',
         },
         {
           name: '娱乐类',
-          url: ''
+          url: '',
         },
         {
           name: '其他',
-          url: ''
-        }
+          url: '',
+        },
       ],
-      navIndex: 0 //默认选中第一个
+      navIndex, //默认选中第一个
     };
   },
   created() {
     // name
-    let path:string = this.$route.fullPath;
+    let path: string = this.$route.fullPath;
     let that = this;
     this.navList.filter((item, index) => {
       if (item.url === path) {
         that.navIndex = index;
-        return index
+        return index;
       }
-    })
+    });
   },
   methods: {
-    clickNav (item: object) {
-      console.log(111);
+    clickNav(index: Number) {
+      this.navIndex = index;
     }
-  }
+  },
 });
 </script>
 

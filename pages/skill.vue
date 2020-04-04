@@ -1,13 +1,74 @@
 <template>
-    <div class="skill">
-        22222
-        <a href="fb://profile">FB 应用打开</a>
+  <div class="skill">
+    <!-- 左右布局 -->
+    <div class="slide-left">
+      <a-menu
+        @click="handleClick"
+        style="width: 100%;height:100%;"
+        :defaultSelectedKeys="['1']"
+        :openKeys.sync="openKeys"
+        mode="inline"
+      >
+        <a-sub-menu key="sub1" @titleClick="titleClick">
+          <span slot="title">
+            <span>JavaScript</span>
+          </span>
+            <a-menu-item key="1">js排序</a-menu-item>
+            <a-menu-item key="2">es6特性</a-menu-item>
+        </a-sub-menu>
+        <a-sub-menu key="sub2" @titleClick="titleClick">
+          <span slot="title">
+            <span>CSS</span>
+          </span>
+            <a-menu-item key="4">动画</a-menu-item>
+            <a-menu-item key="5">head标签库</a-menu-item>
+        </a-sub-menu>
+      </a-menu>
     </div>
+    <div class="slide-right">
+      <!--  子路由展示 -->
+      <nuxt-child />
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
 export default {
-    
-}
+  data () {
+    return {
+      openKeys: ['sub1'],
+      current: ['mail']
+    };
+  },
+  methods: {
+    handleClick() {
+      console.log('click');
+    },
+    titleClick() {
+      console.log('titleClick');
+    },
+  },
+  watch: {
+  },
+};
 </script>
 
+<style lang="scss">
+.skill {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  min-width: 1200px;
+  height: 600px;
+  .slide-left {
+    width: 20%;
+    height: 100%;
+    padding: 0px 20px;
+    height: 100%;
+  }
+  .slide-right {
+    flex: 1;
+  }
+}
+</style>

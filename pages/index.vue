@@ -20,24 +20,6 @@ export default Vue.extend({
   components: {},
   data() {
     return {
-      navList: [
-        {
-          name: '首页',
-          url: ''
-        },
-        {
-          name: '技术类',
-          url: ''
-        },
-        {
-          name: '书籍类',
-          url: ''
-        },
-        {
-          name: '娱乐类',
-          url: ''
-        }
-      ],
       navIndex: 0 //默认选中第一个
     };
   },
@@ -58,6 +40,13 @@ $primary-color: #1890ff;
   .detail {
     width: 900px;
     margin: 0 auto;
+    font-size: 14px;
+    line-height: 28px;
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 0px;
+    }
   }
 }
 </style>
