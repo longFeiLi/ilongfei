@@ -6,10 +6,11 @@
         <div
           :class="{ active: index === navIndex }"
           :key="index"
+          @click="clickNav(item)"
           class="item"
           v-for="(item, index) in navList"
         >
-          <a :href="item.url">{{ item.name }}</a>
+          <nuxt-link :to="item.url">{{ item.name }}</nuxt-link>
         </div>
       </div>
     </div>
@@ -26,11 +27,11 @@ export default Vue.extend({
       navList: [
         {
           name: '首页',
-          url: ''
+          url: '/'
         },
         {
           name: '技术类',
-          url: ''
+          url: '/skill'
         },
         {
           name: '书籍类',
@@ -48,7 +49,22 @@ export default Vue.extend({
       navIndex: 0 //默认选中第一个
     };
   },
-  created() {}
+  created() {
+    // name
+    let path:string = this.$route.fullPath;
+    let that = this;
+    this.navList.filter((item, index) => {
+      if (item.url === path) {
+        that.navIndex = index;
+        return index
+      }
+    })
+  },
+  methods: {
+    clickNav (item: object) {
+      console.log(111);
+    }
+  }
 });
 </script>
 
