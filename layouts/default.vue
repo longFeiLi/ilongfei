@@ -2,8 +2,14 @@
   <div id="app">
     <i-header />
     <!-- 引入头部组件 -->
-    <nuxt />
+    <div style="min-height: 600px">
+      <nuxt />
+    </div>
     <!-- 底部 -->
+    <div  class="footer">
+       © 2020-2010 ilongfei.cn 版权所有
+       <a href="www.beian.miit.gov.cn" target="_blank">粤ICP备20025571号</a>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -71,5 +77,11 @@ p {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  display: block;
 }
 </style>
