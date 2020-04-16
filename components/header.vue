@@ -36,7 +36,7 @@ export default Vue.extend({
         },
         {
           name: '书籍类',
-          url: '',
+          url: '/shopify',
         },
         {
           name: '娱乐类',
