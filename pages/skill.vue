@@ -5,7 +5,6 @@
       <a-menu
         @click="handleClick"
         style="width: 100%;height:100%;"
-        :defaultSelectedKeys="['1']"
         :openKeys.sync="openKeys"
         mode="inline"
       >
@@ -13,8 +12,8 @@
           <span slot="title">
             <span>JavaScript</span>
           </span>
-            <a-menu-item key="1">js排序</a-menu-item>
-            <a-menu-item key="2">es6特性</a-menu-item>
+            <a-menu-item key="sort">js排序</a-menu-item>
+            <a-menu-item key="es">es特性</a-menu-item>
         </a-sub-menu>
         <a-sub-menu key="sub2" @titleClick="titleClick">
           <span slot="title">
@@ -41,11 +40,11 @@ export default {
     };
   },
   methods: {
-    handleClick() {
-      console.log('click');
+    handleClick(data: any) {
+      this.$router.push({ path: '/skill/' + data.key })
     },
-    titleClick() {
-      console.log('titleClick');
+    titleClick(key: any) {
+      console.log('titleClick', key);
     },
   },
   watch: {

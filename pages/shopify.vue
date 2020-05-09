@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <div class="detail">测试功能我要看看我能不能测试</div>
+        <div class="detail">书籍列表</div>
     </div>
 </template>
 
@@ -15,23 +15,10 @@ export default Vue.extend({
   },
   created() {
     console.log(333333);
-    window.setInterval(this.reinitIframe(), 2000);
   },
   methods: {
     init() {
       console.log(111);
-    },
-    reinitIframe() {
-      var iframe = document.getElementById('myapp');
-      try {
-        var bHeight = iframe.contentWindow.document.body.scrollHeight;
-        var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-        var height = Math.max(bHeight, dHeight);
-        iframe.height = height;
-        console.log(height);
-      } catch (ex) {
-        console.log(ex);
-      }
     }
   }
 });

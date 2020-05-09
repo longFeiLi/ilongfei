@@ -40,11 +40,11 @@ export default Vue.extend({
         },
         {
           name: '娱乐类',
-          url: '',
+          url: '/recreation',
         },
         {
-          name: '其他',
-          url: '',
+          name: '关于',
+          url: '/about',
         },
       ],
       navIndex, //默认选中第一个
@@ -55,7 +55,7 @@ export default Vue.extend({
     let path: string = this.$route.fullPath;
     let that = this;
     this.navList.filter((item, index) => {
-      if (item.url === path) {
+      if (path.indexOf(item.url) > -1) {
         that.navIndex = index;
         return index;
       }
