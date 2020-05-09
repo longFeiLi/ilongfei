@@ -32,7 +32,8 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue';
+export default Vue.extend({
   data () {
     return {
       openKeys: ['sub1'],
@@ -41,6 +42,7 @@ export default {
   },
   methods: {
     handleClick(data: any) {
+      console.log(222);
       this.$router.push({ path: '/skill/' + data.key })
     },
     titleClick(key: any) {
@@ -49,7 +51,7 @@ export default {
   },
   watch: {
   },
-};
+})
 </script>
 
 <style lang="scss">
