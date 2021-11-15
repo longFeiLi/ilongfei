@@ -1,6 +1,62 @@
+<script lang="ts" setup>
+import { useRoute } from "vue-router";
+import {
+  ref,
+  watch,
+  onBeforeMount,
+  unref,
+  nextTick,
+  computed,
+  getCurrentInstance,
+  ComputedRef,
+} from "vue";
+// 路由导航变量
+const navList = [
+  {
+    name: "首页",
+    url: "/",
+  },
+  {
+    name: "技术类",
+    url: "/skill",
+  },
+  {
+    name: "书籍类",
+    url: "/shopify",
+  },
+  {
+    name: "娱乐类",
+    url: "/recreation",
+  },
+  {
+    name: "关于",
+    url: "/about",
+  },
+];
+const route = useRoute();
+// 头部处理操作
+let navIndex = ref(-1);
+const path = route.fullPath;
+navList.filter((item, index) => {
+  if (path.indexOf(item.url) > -1) {
+    navIndex.value = index;
+    return
+  }
+  return 0
+});
+
+function clickNav(index:number) {
+  console.log(index);
+  navIndex.value = index;
+  
+}
+</script>
+
 <template>
   <div class="header">
-    <div class="logo">iLongfei</div>
+    <div class="logo">
+      <img src="../assets/logo.png" />
+    </div>
     <div class="slide-right">
       <div class="list">
         <div
@@ -10,64 +66,12 @@
           class="item"
           v-for="(item, index) in navList"
         >
-          <nuxt-link :to="item.url">{{ item.name }}</nuxt-link>
+          <router-link :to="item.url">{{ item.name }}</router-link>
         </div>
       </div>
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
-  components: {},
-  data() {
-    let navIndex: Number = 0;
-    return {
-      navList: [
-        {
-          name: '首页',
-          url: '/',
-        },
-        {
-          name: '技术类',
-          url: '/skill',
-        },
-        {
-          name: '书籍类',
-          url: '/shopify',
-        },
-        {
-          name: '娱乐类',
-          url: '/recreation',
-        },
-        {
-          name: '关于',
-          url: '/about',
-        },
-      ],
-      navIndex, //默认选中第一个
-    };
-  },
-  created() {
-    // name
-    let path: string = this.$route.fullPath;
-    let that = this;
-    this.navList.filter((item, index) => {
-      if (path.indexOf(item.url) > -1) {
-        that.navIndex = index;
-        return index;
-      }
-    });
-  },
-  methods: {
-    clickNav(index: Number) {
-      this.navIndex = index;
-    }
-  },
-});
-</script>
 
 <style lang="scss">
 // 定义颜色
@@ -90,6 +94,9 @@ $primary-color: #1890ff;
     font-size: 30px;
     text-transform: capitalize;
     cursor: pointer;
+    img {
+      width: 150px;
+    }
   }
   .slide-right {
     width: 80%;
@@ -107,9 +114,11 @@ $primary-color: #1890ff;
         padding: 0px 20px;
         text-align: center;
         font-size: 14px;
+        font-weight: bold;
         line-height: 60px;
         a {
           color: rgba(0, 0, 0, 0.65);
+          text-decoration: inherit;
           &:hover {
             color: $primary-color;
           }

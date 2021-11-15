@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+
+</script>
+
 <template>
   <div class="skill-detail">
     <h1>js排序几种方法</h1>
@@ -29,10 +33,7 @@
     </div>
   </div>
 </template>
-<script lang="ts">
-import Vue from 'vue';
-export default Vue.extend({});
-</script>
+
 <style lang="scss" scoped>
 .skill-detail {
   font-size: 12px;
