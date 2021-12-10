@@ -7,11 +7,11 @@ import headerItem from "./components/header.vue";
   <div id="app">
     <!-- 头部 -->
     <header-item />
-    <router-view  style="min-height: 600px"/>
+    <router-view  style="min-height: 400px"/>
      <!-- 底部 -->
     <div  class="footer">
        © 2021-2010 ilongfei.cn 版权所有
-       <a href="www.beian.miit.gov.cn" target="_blank">粤ICP备20025571号</a>
+       <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20025571号</a>
     </div>
   </div>
 </template>
