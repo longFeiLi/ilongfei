@@ -13,7 +13,7 @@ export interface IFruitItem {
 }
 interface NResponse {
   code: number;
-  text: string;
+  data: string;
 }
 
 export const getFruitList = async () => {
@@ -26,7 +26,7 @@ export const getFruitList = async () => {
 export const getNotice = async () => {
   const { data } = await Axios.get<NResponse>('https://www.ilongfei.cn/api/dingNoticeLog');
   if (data.code === 0) {
-    return data.text;
+    return data.data;
   }
   return '';
 };
