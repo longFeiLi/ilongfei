@@ -2,7 +2,7 @@
     <div class="home">
     <div class="detail">
       <div class="title">
-         2021年不负年华
+         2022年不负年华
       </div>
       <!-- <img src="~/assets/image/home.jpg" style="width: 100%" /> -->
       <p>先行动，再等待机会，而不是等待机会再行动</p>
@@ -12,7 +12,6 @@
     </div>
   </div>
 </template>
-
 <style lang="scss">
 $primary-color: #1890ff;
 .home {

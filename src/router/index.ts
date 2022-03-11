@@ -1,11 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
-import Index from '@/pages/index.vue'
-
-const routes = [
+export const constantRoutes: Array<RouteRecordRaw>  = [
   {
     path: '/',
-    component: Index,
+    component: () => import('@/pages/index.vue'),
     meta: {
       title: 'longfei',
     },
@@ -21,7 +19,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes: constantRoutes
 })
 
 export default router

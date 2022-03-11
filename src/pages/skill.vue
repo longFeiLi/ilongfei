@@ -1,34 +1,39 @@
 <script lang="ts" setup>
-
+import request from '@/utils/request';
+import { ref } from 'vue'
+ var url = '/api/dingNotice/test'
+ let logName = ref('');
+ // 获取摸鱼日志信息
+ function getlog() {
+   return request({
+      url: url,
+      method: 'GET',
+      json: true,
+    }).then((res:any) => {
+      console.log(res);
+      if (res.code === 0) {
+        return Promise.resolve(res)
+      }
+        return Promise.reject(res)
+    })
+ }
+//  async
+async function init () {
+ var obj = await getlog()
+ console.log(obj);
+ logName.value = obj.text;
+}
+init();
 </script>
 
 <template>
   <div class="skill-detail">
-    <h1>js排序几种方法</h1>
     <div class="box-list">
-      <p class="name">1.冒泡排序</p>
+      <p class="name">1. 摸鱼日志</p>
       <div class="desc">
-        冒泡排序是最简单的排序方法，容易理解、实现简单，但是冒泡排序是效率最低的排序算法。
-       <pre>
-        <code class="copyable">
-          function bubbleSort(arr) {
-            //console.time('BubbleSort');
-            // 获取数组长度，以确定循环次数。
-            let len = arr.length;
-            // 遍历数组len次，以确保数组被完全排序。
-            for(let i=0; i&lt;len; i++) {
-                // 遍历数组的前len-i项，忽略后面的i项（已排序部分）。
-                for(let j=0; j&lt;len - 1 - i; j++) {
-                    // 将每一项与后一项进行对比，不符合要求的就换位。
-                    if(arr[j] &gt; arr[j+1]) {
-                        [arr[j+1], arr[j]] = [arr[j], arr[j+1]];
-                    }
-                }
-            }
-            //console.timeEnd('BubbleSort');
-            return arr;
-        }></code>
-       </pre>
+        <pre>
+          {{logName}}
+        </pre>
       </div>
     </div>
   </div>

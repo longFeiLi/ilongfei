@@ -10,7 +10,7 @@ import headerItem from "./components/header.vue";
     <router-view  style="min-height: 400px"/>
      <!-- 底部 -->
     <div  class="footer">
-       © 2021-2010 ilongfei.cn 版权所有
+       © 2022-2010 ilongfei.cn 版权所有
        <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20025571号</a>
     </div>
   </div>
@@ -23,5 +23,10 @@ html body {
 }
 #app {
   text-align: center;
+  p,pre,input {
+    margin: 0px;
+  }
 }
+
+
 </style>
