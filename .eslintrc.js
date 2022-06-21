@@ -114,7 +114,6 @@ module.exports = {
       }
     ],
     'vue/valid-template-root': 'off',
-    'vue/multi-word-component-names': 'off',
     'vue/html-self-closing': [
       'error',
       {
