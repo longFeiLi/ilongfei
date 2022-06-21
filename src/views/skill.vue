@@ -50,6 +50,12 @@ export default defineComponent({
       .desc {
         margin-top: 5px;
         font-size: 14px;
+        width: 100%;
+        max-width: 100%;
+        pre {
+          width: 100%;
+          white-space: pre-wrap;
+        }
       }
 
       .copyable {

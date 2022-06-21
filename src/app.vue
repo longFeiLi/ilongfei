@@ -1,12 +1,6 @@
 <template>
   <!-- 头部 -->
   <header-item />
-  <!-- <nav>
-    <router-link :to="{ name: 'index' }">Go to Home</router-link>
-    <router-link :to="{ name: 'user' }">Go to User</router-link>
-    <router-link :to="{ name: 'market' }">Go to Market</router-link>
-  </nav> -->
-  <hr />
   <div class="container">
     <router-view v-slot="{ Component }">
       <Suspense>
@@ -27,16 +21,6 @@ export default defineComponent({
   components: {
     'header-item': headerItem
   }
-  // data() {
-  //   return {
-  //     time: ''
-  //   };
-  // },
-  // mounted() {
-  //   window.setInterval(() => {
-  //     this.time = new Date().toLocaleString();
-  //   }, 1000);
-  // }
 });
 </script>
 <style scoped>
@@ -45,5 +29,16 @@ export default defineComponent({
 }
 .container {
   padding-top: 20px;
+}
+.footer {
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+@media only screen and (max-width: 832px) {
+  .footer {
+    font-size: 12px;
+  }
 }
 </style>

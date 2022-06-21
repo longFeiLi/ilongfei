@@ -16,15 +16,21 @@ $primary-color: #1890ff;
   margin: 0 auto;
   min-height: 500px;
   .detail {
-    width: 900px;
+    width: 80%;
     margin: 0 auto;
     font-size: 14px;
     line-height: 28px;
     .title {
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
       margin: 20px 0px;
     }
+  }
+}
+@media only screen and (max-width: 832px) {
+  .home {
+    width: 100%;
+    min-width: 100%;
   }
 }
 </style>
