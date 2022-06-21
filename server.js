@@ -70,7 +70,9 @@ async function createServer(root = process.cwd(), isProd = isProduction) {
       res.status(500).end(e.stack);
     }
   });
-
+  // 静态目录
+  app.use(express.static(path.join(__dirname, 'public')));
+  
   return { app, vite };
 }
 
