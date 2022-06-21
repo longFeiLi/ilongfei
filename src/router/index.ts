@@ -19,7 +19,7 @@ export default function () {
       {
         path: '/404',
         name: 'user',
-        component: () => import('@/views/user.vue')
+        component: () => import('@/views/index.vue')
       },
       {
         path: '/:catchAll(.*)', // 匹配不到页面的时候

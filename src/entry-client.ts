@@ -4,7 +4,6 @@ import '@/assets/css/index.css';
 import { createApp } from 'vue';
 import { isPromise } from './utils';
 import createRouter from './router/';
-import 'element-plus/theme-chalk/base.css';
 import { createPinia } from 'pinia';
 
 const router = createRouter();
