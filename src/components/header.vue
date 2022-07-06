@@ -36,7 +36,7 @@ export default defineComponent({
       },
       {
         name: '早报',
-        url: '/skill'
+        url: '/morning-paper'
       },
       {
         name: '技术',

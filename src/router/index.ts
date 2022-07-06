@@ -17,6 +17,16 @@ export default function () {
         component: () => import('@/views/skill.vue')
       },
       {
+        path: '/morning-paper',
+        name: 'morning-paper',
+        component: () => import('@/views/morning-paper.vue')
+      },
+      {
+        path: '/about',
+        name: 'about',
+        component: () => import('@/views/about.vue')
+      },
+      {
         path: '/404',
         name: 'user',
         component: () => import('@/views/index.vue')

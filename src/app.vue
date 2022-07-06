@@ -23,18 +23,24 @@ export default defineComponent({
   }
 });
 </script>
-<style scoped>
+<style >
 .logo {
   text-align: center;
 }
+#app {
+  background: #f7f8f9;
+  height: auto;
+}
 .container {
-  padding-top: 20px;
+  /* height: calc(100% - 80px); */
+  height: auto;
 }
 .footer {
   width: 100%;
   height: 20px;
   font-size: 14px;
   text-align: center;
+  padding: 10px 0px;
 }
 @media only screen and (max-width: 832px) {
   .footer {

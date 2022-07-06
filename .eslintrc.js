@@ -50,14 +50,14 @@ module.exports = {
     'spaced-comment': ['error'],
     'no-multi-spaces': ['error'],
     'object-shorthand': ['error', 'always'],
-    'no-multiple-empty-lines': [
-      'error',
-      {
-        max: 1,
-        maxEOF: 1,
-        maxBOF: 0
-      }
-    ],
+    // 'no-multiple-empty-lines': [
+    //   'error',
+    //   {
+    //     max: 1,
+    //     maxEOF: 1,
+    //     maxBOF: 0
+    //   }
+    // ],
     'func-call-spacing': 'off',
     'brace-style': 'off',
     'comma-dangle': ['error', 'never'],
@@ -78,7 +78,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-this-alias': 0,
     '@typescript-eslint/no-inferrable-types': 0,
-    '@typescript-eslint/semi': ['error'],
+    // '@typescript-eslint/semi': ['error'],
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/member-delimiter-style': [
       'error',
