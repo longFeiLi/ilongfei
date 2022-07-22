@@ -251,7 +251,7 @@ export default defineComponent({
     },
     // =MAX(E9-C13-C14*0.5-C15*0.5-C16*0.5,0)
     e10() {
-      let sum = Number(this.e9) - Number(this.c13) - Number(this.c14) * 0.5 - Number(this.c15) * 0.5 - Number(this.c16) * 0.5
+      let sum = Number(this.e9) - Number(this.c14) * 0.5 - Number(this.c15) * 0.5 - Number(this.c16) * 0.5
       return Math.max(sum.toFixed(2), 0)
     },
     // =IF(AND(D4-C8<61,E9>=2,E9<=4,E6="一档"),300,
@@ -441,16 +441,6 @@ export default defineComponent({
             <input v-model="c19" type="number" />
           </div>
         </div>
-        <div class="available-boxs">
-          <div class="item">
-            <label>绩效预估可得:</label>
-            <p>{{ performance }}</p>
-          </div>
-          <div class="item">
-            <label>提成预估可得:</label>
-            <p>{{ commission }}</p>
-          </div>
-        </div>
         <div class="right-boxs">
           <div class="item">
             <label>城市所属档位:</label>
@@ -479,6 +469,17 @@ export default defineComponent({
           <div class="item">
             <label>提成阶段奖金实际标准:</label>
             <p>{{ e12 }}</p>
+          </div>
+        </div>
+        <div class="available-boxs">
+          <h3>合计</h3>
+          <div class="item">
+            <label>绩效预估可得:</label>
+            <p>{{ performance }}</p>
+          </div>
+          <div class="item">
+            <label>提成预估可得:</label>
+            <p>{{ commission }}</p>
           </div>
         </div>
       </div>
