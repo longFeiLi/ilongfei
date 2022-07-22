@@ -402,43 +402,43 @@ export default defineComponent({
           </div>
           <div class="item">
             <label>本月有效拜访量:</label>
-            <input type="text" v-model="c10" />
+            <input v-model="c10" type="number" />
           </div>
           <div class="item">
             <label>上月提交激活本月对赌成功商机:</label>
-            <input type="text" v-model="c11" />
+            <input v-model="c11" type="number" />
           </div>
           <div class="item">
             <label>本月总激活量:</label>
-            <input type="text" v-model="c12" />
+            <input v-model="c12" type="number" />
           </div>
           <div class="item">
             <label>本月提交激活对赌期间商机:</label>
-            <input type="text" v-model="c13" />
+            <input v-model="c13" type="number" />
           </div>
           <div class="item">
             <label>本月激活内部点位:</label>
-            <input type="text" v-model="c14" />
+            <input v-model="c14" type="number" />
           </div>
           <div class="item">
             <label>本月激活渠道商机:</label>
-            <input type="text" v-model="c15" />
+            <input v-model="c15" type="number" />
           </div>
           <div class="item">
             <label>本月激活同层点位商机:</label>
-            <input type="text" v-model="c16" />
+            <input v-model="c16" type="number" />
           </div>
           <div class="item">
             <label>本月激活新场景商机:</label>
-            <input type="text" v-model="c17" />
+            <input v-model="c17" type="number" />
           </div>
           <div class="item">
             <label>本月加项（激励、次月高销）:</label>
-            <input type="text" v-model="c18" />
+            <input v-model="c18" type="number" />
           </div>
           <div class="item">
             <label>本月扣项（撤架、对赌、次月低销）:</label>
-            <input type="text" v-model="c19" />
+            <input v-model="c19" type="number" />
           </div>
         </div>
         <div class="available-boxs">
@@ -577,6 +577,9 @@ export default defineComponent({
         }
       }
     }
+  }
+  input {
+    padding: 1px 4px;
   }
 }
 </style>
