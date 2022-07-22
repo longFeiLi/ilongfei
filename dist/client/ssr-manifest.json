@@ -5,21 +5,6 @@
   "../../../../__uno.css": [
     "/assets/logo.7d4875d8.png"
   ],
-  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
-    "/assets/logo.7d4875d8.png"
-  ],
-  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
-    "/assets/logo.7d4875d8.png"
-  ],
-  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
-    "/assets/logo.7d4875d8.png"
-  ],
-  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
-    "/assets/logo.7d4875d8.png"
-  ],
-  "node_modules/vue-router/dist/vue-router.esm-bundler.js": [
-    "/assets/logo.7d4875d8.png"
-  ],
   "src/assets/img/logo.png": [
     "/assets/logo.7d4875d8.png"
   ],
@@ -50,154 +35,245 @@
   "src/router/index.ts": [
     "/assets/logo.7d4875d8.png"
   ],
-  "node_modules/pinia/node_modules/vue-demi/lib/index.mjs": [
-    "/assets/logo.7d4875d8.png"
-  ],
-  "node_modules/pinia/dist/pinia.esm-browser.js": [
-    "/assets/logo.7d4875d8.png"
-  ],
   "src/entry-client.ts": [
     "/assets/logo.7d4875d8.png"
   ],
   "index.html": [
     "/assets/logo.7d4875d8.png"
   ],
-  "assets/index.b8bad469.js-unocss-hash.css": [
+  "assets/index.a91ddfb6.js-unocss-hash.css": [
     "/assets/logo.7d4875d8.png"
   ],
+  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/env.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/const.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/proxy.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/api.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/app.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/component.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/context.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/hooks.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/util.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/index.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/plugin.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/index.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/vue-router/dist/vue-router.esm-bundler.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/vue-demi/lib/index.mjs": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/env.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/const.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/proxy.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/api/api.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/api/app.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/api/component.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/api/context.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/api/hooks.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/api/util.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/api/index.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/plugin.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/node_modules/@vue/devtools-api/lib/esm/index.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
+  "node_modules/pinia/dist/pinia.esm-browser.js": [
+    "/assets/vendor.da8aa08a.js"
+  ],
   "src/views/index.vue?vue&type=style&index=0&lang.scss": [
-    "/assets/index.d060368a.js",
+    "/assets/index.361fe8a0.js",
     "/assets/index.5198a385.css"
   ],
   "src/views/index.vue": [
-    "/assets/index.d060368a.js",
+    "/assets/index.361fe8a0.js",
     "/assets/index.5198a385.css"
   ],
-  "assets/index.d060368a.js-unocss-hash.css": [
-    "/assets/index.d060368a.js",
+  "assets/index.361fe8a0.js-unocss-hash.css": [
+    "/assets/index.361fe8a0.js",
     "/assets/index.5198a385.css"
   ],
-  "\u0000/Users/lilongfei/Desktop/ilongfei/node_modules/_axios@0.21.4@axios/lib/axios.js?commonjs-module": [
-    "/assets/market.ffeea05c.js"
+  "\u0000/Users/lilongfei/Desktop/ilongfei/node_modules/axios/lib/axios.js?commonjs-module": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/bind.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/bind.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/utils.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/utils.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/buildURL.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/buildURL.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/InterceptorManager.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/InterceptorManager.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/normalizeHeaderName.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/normalizeHeaderName.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/enhanceError.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/enhanceError.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/createError.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/createError.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/settle.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/settle.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/cookies.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/cookies.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/isAbsoluteURL.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/isAbsoluteURL.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/combineURLs.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/combineURLs.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/buildFullPath.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/buildFullPath.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/parseHeaders.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/parseHeaders.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/isURLSameOrigin.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/isURLSameOrigin.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/adapters/xhr.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/adapters/xhr.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/defaults.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/defaults.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/transformData.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/transformData.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/cancel/isCancel.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/cancel/isCancel.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/dispatchRequest.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/dispatchRequest.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/mergeConfig.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/mergeConfig.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/package.json": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/package.json": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/validator.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/validator.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/core/Axios.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/core/Axios.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/cancel/Cancel.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/cancel/Cancel.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/cancel/CancelToken.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/cancel/CancelToken.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/spread.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/spread.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/helpers/isAxiosError.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/helpers/isAxiosError.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/lib/axios.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/lib/axios.js": [
+    "/assets/market.4c62fbb2.js"
   ],
-  "node_modules/_axios@0.21.4@axios/index.js": [
-    "/assets/market.ffeea05c.js"
+  "node_modules/axios/index.js": [
+    "/assets/market.4c62fbb2.js"
   ],
   "src/api/market.ts": [
-    "/assets/market.ffeea05c.js"
+    "/assets/market.4c62fbb2.js"
   ],
   "src/views/skill.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/skill.aff08aaa.js",
-    "/assets/skill.32b34335.css"
+    "/assets/skill.027e9a97.js",
+    "/assets/skill.52bfd6f9.css"
   ],
   "src/views/skill.vue": [
-    "/assets/skill.aff08aaa.js",
-    "/assets/skill.32b34335.css"
+    "/assets/skill.027e9a97.js",
+    "/assets/skill.52bfd6f9.css"
   ],
-  "assets/skill.aff08aaa.js-unocss-hash.css": [
-    "/assets/skill.aff08aaa.js",
-    "/assets/skill.32b34335.css"
+  "assets/skill.027e9a97.js-unocss-hash.css": [
+    "/assets/skill.027e9a97.js",
+    "/assets/skill.52bfd6f9.css"
   ],
   "src/store/market.ts": [
-    "/assets/market.cb5ca39f.js"
+    "/assets/morning-paper.832a9973.js",
+    "/assets/morning-paper.04cdf48a.css"
   ],
   "src/views/morning-paper.vue?vue&type=style&index=0&scoped=true&lang.scss": [
-    "/assets/morning-paper.f9467e15.js",
+    "/assets/morning-paper.832a9973.js",
     "/assets/morning-paper.04cdf48a.css"
   ],
   "src/views/morning-paper.vue": [
-    "/assets/morning-paper.f9467e15.js",
+    "/assets/morning-paper.832a9973.js",
     "/assets/morning-paper.04cdf48a.css"
   ],
-  "assets/morning-paper.f9467e15.js-unocss-hash.css": [
-    "/assets/morning-paper.f9467e15.js",
+  "assets/morning-paper.832a9973.js-unocss-hash.css": [
+    "/assets/morning-paper.832a9973.js",
     "/assets/morning-paper.04cdf48a.css"
   ],
   "src/views/about.vue": [
-    "/assets/about.e209ebd2.js"
+    "/assets/about.ebe076d1.js"
   ]
 }

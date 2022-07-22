@@ -15,7 +15,7 @@ module.exports = {
     semi: 'off',
     indent: 'off',
     quotes: 'off',
-    eqeqeq: ['error', 'always'],
+    // eqeqeq: ['error', 'always'],
     'no-param-reassign': 'off',
     'max-len': 'off',
     'vue/max-attributes-per-line': 0,

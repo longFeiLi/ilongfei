@@ -1,5 +1,6 @@
 "use strict";
-Object.defineProperties(exports, { __esModule: { value: true }, [Symbol.toStringTag]: { value: "Module" } });
+Object.defineProperty(exports, "__esModule", { value: true });
+exports[Symbol.toStringTag] = "Module";
 var vue = require("vue");
 var vueRouter = require("vue-router");
 var serverRenderer = require("vue/server-renderer");
@@ -11,7 +12,7 @@ function _interopDefaultLegacy(e) {
 }
 var axios__default = /* @__PURE__ */ _interopDefaultLegacy(axios);
 var _imports_0 = "/assets/logo.7d4875d8.png";
-var header_vue_vue_type_style_index_0_lang = /* @__PURE__ */ (() => 'header {\n  width: 100%;\n  position: relative;\n  z-index: 120px;\n  background: #fff;\n}\nheader .navbar {\n  height: 66px;\n  border-bottom: 1px solid #e6e6e6;\n  margin-bottom: 0;\n  border-radius: 0;\n  min-height: 50px;\n}\nheader .navbar .container {\n  width: 94%;\n  margin: 0 auto;\n  height: auto;\n  position: relative;\n}\nheader .navbar .container .logo-navbar {\n  float: left;\n}\nheader .navbar .container .logo-navbar img {\n  height: 55px;\n  padding-top: 5px;\n}\nheader .navbar .container .nav-bar {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  height: inherit;\n  overflow: visible;\n  padding-bottom: 0;\n  transition: all 0.3s;\n}\nheader .navbar .container .nav-bar .list-nav {\n  text-align: center;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  padding-top: 0;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list {\n  display: inline-block;\n  float: none;\n  padding: 0 1.3%;\n  margin: 0;\n  line-height: 66px;\n  width: 160px;\n  position: relative;\n  cursor: pointer;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list a {\n  text-decoration: none;\n  color: #000;\n  display: block;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list:before {\n  position: absolute;\n  top: -24px;\n  left: 50%;\n  width: calc(100% - 39px);\n  height: 5px;\n  background-color: #40ba40;\n  transform: translate(-50%);\n  opacity: 0;\n  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);\n  content: "";\n}\nheader .navbar .container .nav-bar .list-nav .menu-list:hover:before {\n  top: 0px;\n  left: 50%;\n  opacity: 1;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list:hover a {\n  color: #40ba40;\n}\nheader .navbar .container .nav-bar .list-nav .itemSelected {\n  border-color: #40ba40;\n}\nheader .navbar .container .nav-bar .list-nav .itemSelected:before {\n  top: 0px;\n  left: 50%;\n  opacity: 1;\n}\nheader .navbar .container .nav-bar .list-nav .itemSelected a {\n  color: #40ba40;\n}\nheader .nav {\n  display: none;\n}\n@media only screen and (max-width: 832px) {\nheader .navbar .container .nav-bar {\n    display: block;\n    top: 60px;\n    left: 100%;\n    background: #fff;\n    color: #000;\n    z-index: 99;\n    position: fixed;\n    height: 100%;\n    transition: all 0.5s;\n}\nheader .navbar .container .m-nav-bar {\n    top: 60px;\n    left: 0px;\n    transition: all 0.5s;\n}\nheader .navbar .container .m-nav-bar .list-nav {\n    text-align: left;\n}\nheader .navbar .container .m-nav-bar .list-nav .menu-list {\n    width: 100%;\n    margin: 0 20px;\n    line-height: 50px;\n    border-bottom: 1px solid #d4d4d4;\n}\nheader .navbar .container .m-nav-bar .list-nav .menu-list:before {\n    display: none;\n}\nheader .navbar .container .nav {\n    position: absolute;\n    right: 0px;\n    top: 16px;\n    display: block;\n}\n}')();
+var header_vue_vue_type_style_index_0_lang = "";
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -89,7 +90,7 @@ _sfc_main$5.setup = (props, ctx) => {
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
 var headerItem = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5]]);
-var app_vue_vue_type_style_index_0_lang = /* @__PURE__ */ (() => "\n.logo {\n  text-align: center;\n}\n#app {\n  background: #f7f8f9;\n  height: auto;\n}\n.container {\n  /* height: calc(100% - 80px); */\n  height: auto;\n}\n.footer {\n  width: 100%;\n  height: 20px;\n  font-size: 14px;\n  text-align: center;\n  padding: 10px 0px;\n}\n@media only screen and (max-width: 832px) {\n.footer {\n    font-size: 12px;\n}\n}\n")();
+var app_vue_vue_type_style_index_0_lang = "";
 const _sfc_main$4 = vue.defineComponent({
   name: "App",
   components: {
@@ -282,7 +283,7 @@ const getApi = async (key, params) => {
   const { data } = await axios__default["default"].post(url, params);
   return data;
 };
-var index_vue_vue_type_style_index_0_lang = /* @__PURE__ */ (() => ".home {\n  min-height: 500px;\n  display: flex;\n  justify-content: center;\n  position: relative;\n  width: 1200px;\n  margin: 0 auto;\n  padding-top: 10px;\n}\n.home .box-sentence {\n  width: 70%;\n  background-color: #fff;\n  border-radius: 4px 4px 0 0;\n  padding: 10px;\n}\n.home .box-sentence .nav-list {\n  display: flex;\n  border-bottom: 1px solid #f0f0f0;\n}\n.home .box-sentence .nav-list .item {\n  color: #40ba40;\n  width: 100px;\n  font-size: 16px;\n  line-height: 30px;\n  text-align: center;\n  cursor: pointer;\n  margin-bottom: 10px;\n}\n.home .box-sentence .nav-list .active {\n  background: #40ba40;\n  color: #fff;\n  border-radius: 10px;\n}\n.home .box-sentence .sentence-list {\n  margin-top: 10px;\n  padding: 0px 10px;\n}\n.home .box-sentence .sentence-list .item {\n  font-size: 14px;\n  margin-bottom: 8px;\n}\n.home .box-conn {\n  width: 30%;\n  margin: 0 auto;\n  text-align: center;\n  font-size: 14px;\n  line-height: 28px;\n  background-color: #fff;\n  border-radius: 4px 4px 0 0;\n  margin-left: 20px;\n}\n.home .box-conn .title {\n  font-size: 22px;\n  font-weight: bold;\n  margin: 20px 0px;\n}\n.home .box-conn p {\n  padding: 0px 20px;\n}\n@media only screen and (max-width: 832px) {\n.home {\n    width: 100%;\n    min-width: 100%;\n}\n}")();
+var index_vue_vue_type_style_index_0_lang = "";
 const _sfc_main$3 = vue.defineComponent({
   setup() {
     const typeList = vue.ref([]);
@@ -338,10 +339,364 @@ _sfc_main$3.setup = (props, ctx) => {
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
 var index = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["ssrRender", _sfc_ssrRender$3]]);
-var index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var index$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
+  [Symbol.toStringTag]: "Module",
   "default": index
-}, Symbol.toStringTag, { value: "Module" }));
+});
+var skill_vue_vue_type_style_index_0_scoped_true_lang = "";
+const _sfc_main$2 = vue.defineComponent({
+  name: "Skill",
+  async setup() {
+    return {};
+  },
+  data() {
+    var cityArr = [
+      {
+        name: "\u5317\u4EAC",
+        value: "\u4E00\u6863"
+      },
+      {
+        name: "\u4E0A\u6D77",
+        value: "\u4E00\u6863"
+      },
+      {
+        name: "\u5E7F\u5DDE",
+        value: "\u4E00\u6863"
+      },
+      {
+        name: "\u6DF1\u5733",
+        value: "\u4E00\u6863"
+      },
+      {
+        name: "\u676D\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5B81\u6CE2",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u6E29\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u7ECD\u5174",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u53F0\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u91D1\u534E",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5609\u5174",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5357\u4EAC",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5F90\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u82CF\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u65E0\u9521",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5E38\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u626C\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u9547\u6C5F",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5357\u901A",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u798F\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u6CC9\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u53A6\u95E8",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u957F\u6C99",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5357\u660C",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u6B66\u6C49",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5B9C\u660C",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u90D1\u5DDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u897F\u5B89",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5408\u80A5",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u6C88\u9633",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5927\u8FDE",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u957F\u6625",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u54C8\u5C14\u6EE8",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5929\u6D25",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u77F3\u5BB6\u5E84",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u6D4E\u5357",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u9752\u5C9B",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u4F5B\u5C71",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u4E1C\u839E",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u4E2D\u5C71",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u73E0\u6D77",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u5357\u5B81",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u91CD\u5E86",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u6210\u90FD",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u6606\u660E",
+        value: "\u4E8C\u6863"
+      },
+      {
+        name: "\u8D35\u9633",
+        value: "\u4E8C\u6863"
+      }
+    ];
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    var today = year + "/" + month + "/" + day;
+    return {
+      cityArr,
+      d4: "2022/07/31",
+      c6: "\u5317\u4EAC",
+      c7: "1\u661FBD",
+      c8: "2022/7/2",
+      c9: "\u662F",
+      c10: 0,
+      c11: 0,
+      c12: 0,
+      c13: 0,
+      c14: 0,
+      c15: 0,
+      c16: 0,
+      c17: 0,
+      c18: 0,
+      c19: 0,
+      e6: "\u4E00\u6863",
+      today
+    };
+  },
+  computed: {
+    e7() {
+      switch (this.c7) {
+        case "2\u661FBD":
+          return 50;
+        case "3\u661FBD":
+          return 100;
+        case "4\u661FBD":
+          return 150;
+        case "5\u661FBD":
+          return 200;
+        case "6\u661FBD":
+          return 250;
+      }
+      return 0;
+    },
+    e8() {
+      var day = this.getDaysBetween(this.c8, this.d4);
+      if (day < 31) {
+        return "\u65B0\u4EBA\u9996\u6708";
+      }
+      if (day < 61) {
+        return "\u65B0\u4EBA\u6B21\u6708";
+      }
+      return "\u8001\u4EBA";
+    },
+    e9() {
+      return Math.max(Number(this.c11) + Number(this.c12) - Number(this.c13), 0);
+    },
+    e10() {
+      let sum = Number(this.e9) - Number(this.c13) - Number(this.c14) * 0.5 - Number(this.c15) * 0.5 - Number(this.c16) * 0.5;
+      return Math.max(sum.toFixed(2), 0);
+    },
+    e11() {
+      var day = this.getDaysBetween(this.c8, this.d4) + 1;
+      if (day < 61 && Number(this.e9) >= 2 && Number(this.e9) <= 4 && this.e6 == "\u4E00\u6863") {
+        return 300;
+      } else if (day < 61 && Number(this.e9) >= 2 && Number(this.e9) <= 4 && this.e6 == "\u4E8C\u6863") {
+        return 250;
+      } else if (Number(this.e9) < 5) {
+        return 0;
+      } else if (Number(this.e9) < 7 && this.e6 == "\u4E00\u6863") {
+        return 350;
+      } else if (Number(this.e9) < 9 && this.e6 == "\u4E00\u6863") {
+        return 450;
+      } else if (Number(this.e9) < 11 && this.e6 == "\u4E00\u6863") {
+        return 500;
+      } else if (Number(this.e9) < 16 && this.e6 == "\u4E00\u6863") {
+        return 550;
+      } else if (Number(this.e9) >= 16 && this.e6 == "\u4E00\u6863") {
+        return 600;
+      } else if (Number(this.e9) < 7 && this.e6 == "\u4E8C\u6863") {
+        return 300;
+      } else if (Number(this.e9) < 9 && this.e6 == "\u4E8C\u6863") {
+        return 400;
+      } else if (Number(this.e9) < 11 && this.e6 == "\u4E8C\u6863") {
+        return 450;
+      } else if (Number(this.e9) < 16 && this.e6 == "\u4E8C\u6863") {
+        return 500;
+      } else {
+        return 550;
+      }
+    },
+    e12() {
+      return Number(this.e11) + Number(this.e7);
+    },
+    performance() {
+      if (this.c7 == "4\u661FBD" || this.c7 == "5\u661FBD" || this.c7 == "6\u661FBD") {
+        return 1e3;
+      }
+      if (this.c9 == "\u5426") {
+        return 0;
+      }
+      if (this.e8 == "\u65B0\u4EBA\u9996\u6708") {
+        var day = this.getDaysBetween(this.c8, this.today) + 1;
+        let num3 = Number(this.c10) > day * 4 - 12 ? 1 : 0;
+        let num22 = Number(this.e9) >= 2 ? 1 : 0;
+        var day2 = this.getDaysBetween(this.c8, this.d4);
+        return ((2e3 * 0.2 * num3 + 2e3 * 0.8 * num22) * (day2 / 31)).toFixed(2);
+      }
+      if (this.e8 == "\u65B0\u4EBA\u6B21\u6708") {
+        let num3 = Number(this.c10) > 83 ? 1 : 0;
+        let num22 = Number(this.e9) >= 4 ? 1 : 0;
+        return 2e3 * 0.2 * num3 + 2e3 * 0.8 * num22;
+      }
+      var num = Number(this.c10) > 83 ? 1 : 0;
+      var num2 = Number(this.e9) >= 5 ? 1 : 0;
+      console.log(num, num2);
+      return 1e3 * 0.2 * num + 1e3 * 0.8 * num2;
+    },
+    commission() {
+      if (this.e8 == "\u8001\u4EBA" && Number(this.e9) < 5) {
+        return Number(this.c18) - Number(this.c19);
+      }
+      return Number(this.e10) * Number(this.e12) + Number(this.c18) - Number(this.c19);
+    }
+  },
+  methods: {
+    onChangeCity() {
+      this.e6 = this.cityArr.filter((o) => o.name == this.c6)[0].value;
+    },
+    getDaysBetween(date1, date2) {
+      var startDate = Date.parse(date1);
+      var endDate = Date.parse(date2);
+      if (startDate > endDate) {
+        return 0;
+      }
+      if (startDate == endDate) {
+        return 1;
+      }
+      var days = (endDate - startDate) / (1 * 24 * 60 * 60 * 1e3);
+      return days;
+    }
+  }
+});
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "skill-detail" }, _attrs))} data-v-764e3aa2><h1 data-v-764e3aa2>BD\u7EE9\u6548\u63D0\u6210\u9884\u4F30\u8BA1\u7B97\u5668</h1><div data-v-764e3aa2><h2 data-v-764e3aa2>\u8BA1\u7B97\u6708\u4EFD:2022\u5E747\u6708</h2><div class="list" data-v-764e3aa2><div class="enter-boxs" data-v-764e3aa2><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u4F60\u7684\u57CE\u5E02:</label><select data-v-764e3aa2><!--[-->`);
+  serverRenderer.ssrRenderList(_ctx.cityArr, (item, index2) => {
+    _push(`<option${serverRenderer.ssrRenderAttr("value", item.name)} data-v-764e3aa2>${serverRenderer.ssrInterpolate(item.name)}</option>`);
+  });
+  _push(`<!--]--></select></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u4F60\u7684\u5C97\u4F4D:</label><select data-v-764e3aa2><option value="1\u661FBD" data-v-764e3aa2>1\u661FBD</option><option value="2\u661FBD" data-v-764e3aa2>2\u661FBD</option><option value="3\u661FBD" data-v-764e3aa2>3\u661FBD</option><option value="4\u661FBD" data-v-764e3aa2>4\u661FBD</option><option value="5\u661FBD" data-v-764e3aa2>5\u661FBD</option><option value="6\u661FBD" data-v-764e3aa2>6\u661FBD</option><option value="BDM" data-v-764e3aa2>BDM</option><option value="CM" data-v-764e3aa2>CM</option></select></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u4F60\u7684\u5165\u804C\u65E5\u671F:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c8)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u5F53\u6708\u8003\u6838\u662F\u5426\u8FBE\u6807:</label><select data-v-764e3aa2><option value="\u662F" data-v-764e3aa2>\u662F</option><option value="\u5426" data-v-764e3aa2>\u5426</option></select></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6709\u6548\u62DC\u8BBF\u91CF:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c10)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u4E0A\u6708\u63D0\u4EA4\u6FC0\u6D3B\u672C\u6708\u5BF9\u8D4C\u6210\u529F\u5546\u673A:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c11)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u603B\u6FC0\u6D3B\u91CF:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c12)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u63D0\u4EA4\u6FC0\u6D3B\u5BF9\u8D4C\u671F\u95F4\u5546\u673A:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c13)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6FC0\u6D3B\u5185\u90E8\u70B9\u4F4D:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c14)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6FC0\u6D3B\u6E20\u9053\u5546\u673A:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c15)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6FC0\u6D3B\u540C\u5C42\u70B9\u4F4D\u5546\u673A:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c16)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6FC0\u6D3B\u65B0\u573A\u666F\u5546\u673A:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c17)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u52A0\u9879\uFF08\u6FC0\u52B1\u3001\u6B21\u6708\u9AD8\u9500\uFF09:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c18)} data-v-764e3aa2></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6263\u9879\uFF08\u64A4\u67B6\u3001\u5BF9\u8D4C\u3001\u6B21\u6708\u4F4E\u9500\uFF09:</label><input type="text"${serverRenderer.ssrRenderAttr("value", _ctx.c19)} data-v-764e3aa2></div></div><div class="available-boxs" data-v-764e3aa2><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u7EE9\u6548\u9884\u4F30\u53EF\u5F97:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.performance)}</p></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u63D0\u6210\u9884\u4F30\u53EF\u5F97:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.commission)}</p></div></div><div class="right-boxs" data-v-764e3aa2><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u57CE\u5E02\u6240\u5C5E\u6863\u4F4D:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.e6)}</p></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u661F\u7EA7BD\u63D0\u6210\u6807\u51C6\u52A0\u6210:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.e7)}</p></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u5F53\u6708\u72B6\u6001:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.e8)}</p></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6FC0\u6D3B\u5546\u673A-\u6298\u524D:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.e9)}</p></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u672C\u6708\u6FC0\u6D3B\u5546\u673A-\u6298\u540E:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.e10)}</p></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u89C4\u5219\u9636\u68AF\u5956\u91D1\u6807\u51C6:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.e11)}</p></div><div class="item" data-v-764e3aa2><label data-v-764e3aa2>\u63D0\u6210\u9636\u6BB5\u5956\u91D1\u5B9E\u9645\u6807\u51C6:</label><p data-v-764e3aa2>${serverRenderer.ssrInterpolate(_ctx.e12)}</p></div></div></div></div></div>`);
+}
+const _sfc_setup$2 = _sfc_main$2.setup;
+_sfc_main$2.setup = (props, ctx) => {
+  const ssrContext = vue.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("src/views/skill.vue");
+  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
+};
+var skill = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-764e3aa2"]]);
+var skill$1 = /* @__PURE__ */ Object.freeze({
+  __proto__: null,
+  [Symbol.toStringTag]: "Module",
+  "default": skill
+});
 const useMarket = pinia.defineStore("market", {
   state() {
     return {
@@ -368,32 +723,7 @@ const useMarket = pinia.defineStore("market", {
     }
   }
 });
-var skill_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".skill-detail[data-v-78ce4f6c] {\n  font-size: 12px;\n  text-align: center;\n  width: 80%;\n  margin: 0 auto;\n}\n.skill-detail h1[data-v-78ce4f6c] {\n  text-align: center;\n  font-size: 20px;\n  font-weight: bold;\n}\n.skill-detail .box-list[data-v-78ce4f6c] {\n  color: #333;\n  text-align: left;\n}\n.skill-detail .box-list .name[data-v-78ce4f6c] {\n  font-size: 16px;\n  line-height: 32px;\n  font-weight: bold;\n}\n.skill-detail .box-list .desc[data-v-78ce4f6c] {\n  margin-top: 5px;\n  font-size: 14px;\n  width: 100%;\n  max-width: 100%;\n}\n.skill-detail .box-list .desc pre[data-v-78ce4f6c] {\n  width: 100%;\n  white-space: pre-wrap;\n}\n.skill-detail .box-list .copyable[data-v-78ce4f6c] {\n  background: #f8f8f8;\n  font-size: 12px;\n}")();
-const _sfc_main$2 = vue.defineComponent({
-  name: "Skill",
-  async setup() {
-    const marketStore = useMarket();
-    await marketStore.getMoyuList();
-    const { moyuStr } = marketStore;
-    return { moyuStr };
-  }
-});
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "skill-detail" }, _attrs))} data-v-78ce4f6c><div class="box-list" data-v-78ce4f6c><p class="name" data-v-78ce4f6c>1. \u6478\u9C7C\u65E5\u5FD7</p><div class="desc" data-v-78ce4f6c><pre data-v-78ce4f6c>          ${serverRenderer.ssrInterpolate(_ctx.moyuStr)}
-        </pre></div></div></div>`);
-}
-const _sfc_setup$2 = _sfc_main$2.setup;
-_sfc_main$2.setup = (props, ctx) => {
-  const ssrContext = vue.useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("src/views/skill.vue");
-  return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
-};
-var skill = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-78ce4f6c"]]);
-var skill$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
-  __proto__: null,
-  "default": skill
-}, Symbol.toStringTag, { value: "Module" }));
-var morningPaper_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".skill-detail[data-v-51e51e5e] {\n  font-size: 12px;\n  text-align: center;\n  width: 80%;\n  margin: 0 auto;\n}\n.skill-detail h1[data-v-51e51e5e] {\n  text-align: center;\n  font-size: 20px;\n  font-weight: bold;\n}\n.skill-detail .box-list[data-v-51e51e5e] {\n  color: #333;\n  text-align: left;\n}\n.skill-detail .box-list .name[data-v-51e51e5e] {\n  font-size: 16px;\n  line-height: 32px;\n  font-weight: bold;\n}\n.skill-detail .box-list .desc[data-v-51e51e5e] {\n  margin-top: 5px;\n  font-size: 14px;\n  width: 100%;\n  max-width: 100%;\n}\n.skill-detail .box-list .desc pre[data-v-51e51e5e] {\n  width: 100%;\n  white-space: pre-wrap;\n}\n.skill-detail .box-list .copyable[data-v-51e51e5e] {\n  background: #f8f8f8;\n  font-size: 12px;\n}")();
+var morningPaper_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$1 = vue.defineComponent({
   name: "Morning",
   async setup() {
@@ -414,10 +744,11 @@ _sfc_main$1.setup = (props, ctx) => {
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
 var morningPaper = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-51e51e5e"]]);
-var morningPaper$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var morningPaper$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
+  [Symbol.toStringTag]: "Module",
   "default": morningPaper
-}, Symbol.toStringTag, { value: "Module" }));
+});
 const _sfc_main = {};
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   _push(`<div${serverRenderer.ssrRenderAttrs(_attrs)}>about</div>`);
@@ -429,8 +760,9 @@ _sfc_main.setup = (props, ctx) => {
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 var about = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
-var about$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var about$1 = /* @__PURE__ */ Object.freeze({
   __proto__: null,
+  [Symbol.toStringTag]: "Module",
   "default": about
-}, Symbol.toStringTag, { value: "Module" }));
+});
 exports.render = render;

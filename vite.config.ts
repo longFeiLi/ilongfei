@@ -9,6 +9,7 @@ import visualizer from 'rollup-plugin-visualizer';
 import unocss from 'unocss/vite';
 import presetMini from '@unocss/preset-mini';
 import AutoImport from 'unplugin-auto-import/vite';
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default ({ command }) => {
   const config: UserConfig = {
@@ -29,6 +30,13 @@ export default ({ command }) => {
       AutoImport({
         imports: ['vue', 'vue-router', 'pinia'],
         resolvers: [ElementPlusResolver({ ssr: true })]
+      }),
+      VitePWA({
+        registerType: 'autoUpdate',
+        injectRegister: 'auto',
+        devOptions: {
+          enabled: true
+        }
       })
     ],
     server: {
