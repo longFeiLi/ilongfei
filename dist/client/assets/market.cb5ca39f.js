@@ -1,1 +1,0 @@
-import{a as r,b as o}from"./market.ffeea05c.js";import{i as a}from"./index.b8bad469.js";const i=a("market",{state(){return{fruitList:[],moyuStr:""}},actions:{async getList(){try{const t=await r();this.fruitList=t}catch(t){console.log(t)}},async getMoyuList(){try{const t=await o();this.moyuStr=t}catch(t){console.log(t)}}}});export{i as u};

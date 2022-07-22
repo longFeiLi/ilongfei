@@ -1,9 +1,21 @@
 <script lang="ts">
-// import { useMarket } from '@/store/market';
+import Datepicker from '@vuepic/vue-datepicker'
+import '@vuepic/vue-datepicker/dist/main.css'
+import { ref } from 'vue'
 export default defineComponent({
   name: 'Skill',
+  components: {
+    Datepicker
+  },
   async setup() {
-    return {}
+    const c8 = ref(new Date())
+    const format = (date) => {
+      const day = date.getDate()
+      const month = date.getMonth() + 1
+      const year = date.getFullYear()
+      return `${year}/${month}/${day}`
+    }
+    return { c8, format }
   },
   data() {
     var cityArr = [
@@ -202,7 +214,7 @@ export default defineComponent({
       d4: '2022/07/31',
       c6: '北京',
       c7: '1星BD',
-      c8: '2022/7/2',
+      // c8: '2022/7/2',
       c9: '是',
       c10: 0,
       c11: 0,
@@ -364,7 +376,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="skill-detail">
+  <div id="skill" class="skill-detail">
     <h1>BD绩效提成预估计算器</h1>
     <div>
       <h2>计算月份:2022年7月</h2>
@@ -391,7 +403,8 @@ export default defineComponent({
           </div>
           <div class="item">
             <label>你的入职日期:</label>
-            <input type="text" v-model="c8" />
+            <!-- <input type="text" v-model="c8" /> -->
+            <datepicker v-model="c8" :enableTimePicker="false" style="width: 160px;" :format="format" />
           </div>
           <div class="item">
             <label>当月考核是否达标:</label>
