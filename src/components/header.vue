@@ -3,7 +3,7 @@
     <div class="navbar">
       <div class="container">
         <div class="logo-navbar">
-          <img src="../assets/img/logo.png" />
+          <img src="@/assets/img/logo.png" />
         </div>
         <!-- 菜单 -->
         <div id="ptx-navbar" class="nav-bar" :class="{ 'm-nav-bar': showNav }">
