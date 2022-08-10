@@ -6,6 +6,7 @@ export default defineComponent({
     const marketStore = useMarket();
     await marketStore.getMoyuList();
     const { moyuStr } = marketStore;
+    console.log(moyuStr);
     return { moyuStr };
   }
 });
@@ -14,7 +15,7 @@ export default defineComponent({
 <template>
   <div class="skill-detail">
     <div class="box-list">
-      <p class="name">1. 摸鱼日志</p>
+      <p class="name">摸鱼日志:</p>
       <div class="desc">
         <pre>
           {{ moyuStr }}

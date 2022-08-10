@@ -29,7 +29,7 @@ export default defineComponent({
 }
 #app {
   background: #f7f8f9;
-  height: auto;
+  height: 100%;
 }
 .container {
   /* height: calc(100% - 80px); */
