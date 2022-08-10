@@ -44,7 +44,7 @@ export default ({ command }) => {
               handler: 'CacheFirst',
               options: {
                 cacheName: 'interface-cache'
-              },
+              }
             },
             {
               urlPattern: /(.*?)\.(js|css|ts)/, // js /css /ts静态资源缓存

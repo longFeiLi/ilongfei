@@ -1,13 +1,24 @@
 <script lang="ts">
 import { useMarket } from '@/store/market';
+import { ref, onServerPrefetch, onMounted } from 'vue'
 export default defineComponent({
   name: 'Morning',
   async setup() {
+    const moyuLog = ref('')
     const marketStore = useMarket();
-    await marketStore.getMoyuList();
-    const { moyuStr } = marketStore;
-    console.log(moyuStr);
-    return { moyuStr };
+    onMounted(async () => {
+      await marketStore.getMoyuList();
+      const { moyuStr } = marketStore;
+      moyuLog.value= moyuStr
+    })
+    onServerPrefetch(async() => {
+      await marketStore.getMoyuList();
+      const { moyuStr } = marketStore;
+      moyuLog.value= moyuStr
+    })
+    return {
+      moyuLog
+    }
   }
 });
 </script>
@@ -18,7 +29,7 @@ export default defineComponent({
       <p class="name">摸鱼日志:</p>
       <div class="desc">
         <pre>
-          {{ moyuStr }}
+          {{ moyuLog }}
         </pre>
       </div>
     </div>
