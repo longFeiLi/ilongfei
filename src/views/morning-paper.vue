@@ -8,13 +8,14 @@ export default defineComponent({
     const marketStore = useMarket();
     onMounted(async () => {
       await marketStore.getMoyuList();
-      const { moyuStr } = marketStore;
-      moyuLog.value= moyuStr
+      console.log(marketStore);
+      const { moyu } = marketStore;
+      moyuLog.value= moyu
     })
     onServerPrefetch(async() => {
       await marketStore.getMoyuList();
-      const { moyuStr } = marketStore;
-      moyuLog.value= moyuStr
+      const { moyu } = marketStore;
+      moyuLog.value= moyu
     })
     return {
       moyuLog

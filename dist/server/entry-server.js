@@ -11,7 +11,7 @@ function _interopDefaultLegacy(e) {
 }
 var axios__default = /* @__PURE__ */ _interopDefaultLegacy(axios);
 var _imports_0 = "/assets/logo.7d4875d8.png";
-var header_vue_vue_type_style_index_0_lang = /* @__PURE__ */ (() => 'header {\n  width: 100%;\n  position: relative;\n  z-index: 120px;\n  background: #fff;\n}\nheader .navbar {\n  height: 66px;\n  border-bottom: 1px solid #e6e6e6;\n  margin-bottom: 0;\n  border-radius: 0;\n  min-height: 50px;\n}\nheader .navbar .container {\n  width: 94%;\n  margin: 0 auto;\n  height: auto;\n  position: relative;\n}\nheader .navbar .container .logo-navbar {\n  float: left;\n}\nheader .navbar .container .logo-navbar img {\n  height: 55px;\n  padding-top: 5px;\n}\nheader .navbar .container .nav-bar {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  height: inherit;\n  overflow: visible;\n  padding-bottom: 0;\n  transition: all 0.3s;\n}\nheader .navbar .container .nav-bar .list-nav {\n  text-align: center;\n  width: 100%;\n  height: 100%;\n  text-align: center;\n  padding-top: 0;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list {\n  display: inline-block;\n  float: none;\n  padding: 0 1.3%;\n  margin: 0;\n  line-height: 66px;\n  width: 160px;\n  position: relative;\n  cursor: pointer;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list a {\n  text-decoration: none;\n  color: #000;\n  display: block;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list:before {\n  position: absolute;\n  top: -24px;\n  left: 50%;\n  width: calc(100% - 39px);\n  height: 5px;\n  background-color: #40ba40;\n  transform: translate(-50%);\n  opacity: 0;\n  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);\n  content: "";\n}\nheader .navbar .container .nav-bar .list-nav .menu-list:hover:before {\n  top: 0px;\n  left: 50%;\n  opacity: 1;\n}\nheader .navbar .container .nav-bar .list-nav .menu-list:hover a {\n  color: #40ba40;\n}\nheader .navbar .container .nav-bar .list-nav .itemSelected {\n  border-color: #40ba40;\n}\nheader .navbar .container .nav-bar .list-nav .itemSelected:before {\n  top: 0px;\n  left: 50%;\n  opacity: 1;\n}\nheader .navbar .container .nav-bar .list-nav .itemSelected a {\n  color: #40ba40;\n}\nheader .nav {\n  display: none;\n}\n@media only screen and (max-width: 832px) {\nheader .navbar .container .nav-bar {\n    display: block;\n    top: 60px;\n    left: 100%;\n    background: #fff;\n    color: #000;\n    z-index: 99;\n    position: fixed;\n    height: 100%;\n    transition: all 0.5s;\n}\nheader .navbar .container .m-nav-bar {\n    top: 60px;\n    left: 0px;\n    transition: all 0.5s;\n}\nheader .navbar .container .m-nav-bar .list-nav {\n    text-align: left;\n}\nheader .navbar .container .m-nav-bar .list-nav .menu-list {\n    width: 100%;\n    margin: 0 20px;\n    line-height: 50px;\n    border-bottom: 1px solid #d4d4d4;\n}\nheader .navbar .container .m-nav-bar .list-nav .menu-list:before {\n    display: none;\n}\nheader .navbar .container .nav {\n    position: absolute;\n    right: 0px;\n    top: 16px;\n    display: block;\n}\n}')();
+var header_vue_vue_type_style_index_0_lang = "";
 var _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -89,7 +89,7 @@ _sfc_main$5.setup = (props, ctx) => {
   return _sfc_setup$5 ? _sfc_setup$5(props, ctx) : void 0;
 };
 var headerItem = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["ssrRender", _sfc_ssrRender$5]]);
-var app_vue_vue_type_style_index_0_lang = /* @__PURE__ */ (() => "\n.logo {\n  text-align: center;\n}\n#app {\n  background: #f7f8f9;\n  height: auto;\n}\n.container {\n  /* height: calc(100% - 80px); */\n  height: auto;\n}\n.footer {\n  width: 100%;\n  height: 20px;\n  font-size: 14px;\n  text-align: center;\n  padding: 10px 0px;\n}\n@media only screen and (max-width: 832px) {\n.footer {\n    font-size: 12px;\n}\n}\n")();
+var app_vue_vue_type_style_index_0_lang = "";
 const _sfc_main$4 = vue.defineComponent({
   name: "App",
   components: {
@@ -124,7 +124,7 @@ function _sfc_ssrRender$4(_ctx, _push, _parent, _attrs, $props, $setup, $data, $
     }),
     _: 1
   }, _parent));
-  _push(`</div><div class="footer"> \xA9 2022-2010 ilongfei.cn \u7248\u6743\u6240\u6709 <a href="https://beian.miit.gov.cn/" target="_blank">\u7CA4ICP\u590720025571\u53F7</a></div><!--]-->`);
+  _push(`</div><div class="footer"> \xA9 2023-2010 ilongfei.cn \u7248\u6743\u6240\u6709 <a href="https://beian.miit.gov.cn/" target="_blank">\u7CA4ICP\u590720025571\u53F7</a></div><!--]-->`);
 }
 const _sfc_setup$4 = _sfc_main$4.setup;
 _sfc_main$4.setup = (props, ctx) => {
@@ -270,9 +270,6 @@ const apiData = {
   getSentenceTypelist: "api/getSentenceTypelist",
   getReptile: "api/getReptile"
 };
-const getFruitList = async () => {
-  return [];
-};
 const getNotice = async () => {
   const { data } = await axios__default["default"].get("https://ilongfei.cn/api/dingNoticeLog");
   return data;
@@ -282,7 +279,7 @@ const getApi = async (key, params) => {
   const { data } = await axios__default["default"].post(url, params);
   return data;
 };
-var index_vue_vue_type_style_index_0_lang = /* @__PURE__ */ (() => ".home {\n  min-height: 500px;\n  display: flex;\n  justify-content: center;\n  position: relative;\n  width: 1200px;\n  margin: 0 auto;\n  padding-top: 10px;\n}\n.home .box-sentence {\n  width: 70%;\n  background-color: #fff;\n  border-radius: 4px 4px 0 0;\n  padding: 10px;\n}\n.home .box-sentence .nav-list {\n  display: flex;\n  border-bottom: 1px solid #f0f0f0;\n}\n.home .box-sentence .nav-list .item {\n  color: #40ba40;\n  width: 100px;\n  font-size: 16px;\n  line-height: 30px;\n  text-align: center;\n  cursor: pointer;\n  margin-bottom: 10px;\n}\n.home .box-sentence .nav-list .active {\n  background: #40ba40;\n  color: #fff;\n  border-radius: 10px;\n}\n.home .box-sentence .sentence-list {\n  margin-top: 10px;\n  padding: 0px 10px;\n}\n.home .box-sentence .sentence-list .item {\n  font-size: 14px;\n  margin-bottom: 8px;\n}\n.home .box-conn {\n  width: 30%;\n  margin: 0 auto;\n  text-align: center;\n  font-size: 14px;\n  line-height: 28px;\n  background-color: #fff;\n  border-radius: 4px 4px 0 0;\n  margin-left: 20px;\n}\n.home .box-conn .title {\n  font-size: 22px;\n  font-weight: bold;\n  margin: 20px 0px;\n}\n.home .box-conn p {\n  padding: 0px 20px;\n}\n@media only screen and (max-width: 832px) {\n.home {\n    width: 100%;\n    min-width: 100%;\n}\n}")();
+var index_vue_vue_type_style_index_0_lang = "";
 const _sfc_main$3 = vue.defineComponent({
   setup() {
     const typeList = vue.ref([]);
@@ -342,45 +339,9 @@ var index$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePropert
   __proto__: null,
   "default": index
 }, Symbol.toStringTag, { value: "Module" }));
-const useMarket = pinia.defineStore("market", {
-  state() {
-    return {
-      fruitList: [],
-      moyuStr: ""
-    };
-  },
-  actions: {
-    async getList() {
-      try {
-        const data = await getFruitList();
-        this.fruitList = data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-    async getMoyuList() {
-      try {
-        const data = await getNotice();
-        this.moyuStr = data;
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  }
-});
-var skill_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".skill-detail[data-v-78ce4f6c] {\n  font-size: 12px;\n  text-align: center;\n  width: 80%;\n  margin: 0 auto;\n}\n.skill-detail h1[data-v-78ce4f6c] {\n  text-align: center;\n  font-size: 20px;\n  font-weight: bold;\n}\n.skill-detail .box-list[data-v-78ce4f6c] {\n  color: #333;\n  text-align: left;\n}\n.skill-detail .box-list .name[data-v-78ce4f6c] {\n  font-size: 16px;\n  line-height: 32px;\n  font-weight: bold;\n}\n.skill-detail .box-list .desc[data-v-78ce4f6c] {\n  margin-top: 5px;\n  font-size: 14px;\n  width: 100%;\n  max-width: 100%;\n}\n.skill-detail .box-list .desc pre[data-v-78ce4f6c] {\n  width: 100%;\n  white-space: pre-wrap;\n}\n.skill-detail .box-list .copyable[data-v-78ce4f6c] {\n  background: #f8f8f8;\n  font-size: 12px;\n}")();
-const _sfc_main$2 = vue.defineComponent({
-  name: "Skill",
-  async setup() {
-    const marketStore = useMarket();
-    await marketStore.getMoyuList();
-    const { moyuStr } = marketStore;
-    return { moyuStr };
-  }
-});
-function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "skill-detail" }, _attrs))} data-v-78ce4f6c><div class="box-list" data-v-78ce4f6c><p class="name" data-v-78ce4f6c>1. \u6478\u9C7C\u65E5\u5FD7</p><div class="desc" data-v-78ce4f6c><pre data-v-78ce4f6c>          ${serverRenderer.ssrInterpolate(_ctx.moyuStr)}
-        </pre></div></div></div>`);
+const _sfc_main$2 = {};
+function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
+  _push(`<!--[--> src/views/morning-paper.vue <div class="skill"><div class="slide-left"> ddd </div><div class="slide-right"> 222 </div></div><!--]-->`);
 }
 const _sfc_setup$2 = _sfc_main$2.setup;
 _sfc_main$2.setup = (props, ctx) => {
@@ -388,23 +349,59 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("src/views/skill.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-var skill = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-78ce4f6c"]]);
+var skill = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["ssrRender", _sfc_ssrRender$2]]);
 var skill$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": skill
 }, Symbol.toStringTag, { value: "Module" }));
-var morningPaper_vue_vue_type_style_index_0_scoped_true_lang = /* @__PURE__ */ (() => ".skill-detail[data-v-51e51e5e] {\n  font-size: 12px;\n  text-align: center;\n  width: 80%;\n  margin: 0 auto;\n}\n.skill-detail h1[data-v-51e51e5e] {\n  text-align: center;\n  font-size: 20px;\n  font-weight: bold;\n}\n.skill-detail .box-list[data-v-51e51e5e] {\n  color: #333;\n  text-align: left;\n}\n.skill-detail .box-list .name[data-v-51e51e5e] {\n  font-size: 16px;\n  line-height: 32px;\n  font-weight: bold;\n}\n.skill-detail .box-list .desc[data-v-51e51e5e] {\n  margin-top: 5px;\n  font-size: 14px;\n  width: 100%;\n  max-width: 100%;\n}\n.skill-detail .box-list .desc pre[data-v-51e51e5e] {\n  width: 100%;\n  white-space: pre-wrap;\n}\n.skill-detail .box-list .copyable[data-v-51e51e5e] {\n  background: #f8f8f8;\n  font-size: 12px;\n}")();
+const useMarket = pinia.defineStore("market", {
+  state() {
+    return {
+      moyuStr: ""
+    };
+  },
+  getters: {
+    moyu: (state) => {
+      console.log(state.moyuStr);
+      return state.moyuStr;
+    }
+  },
+  actions: {
+    async getMoyuList() {
+      try {
+        const data = await getNotice();
+        console.log(typeof data);
+        this.moyuStr = data;
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  }
+});
+var morningPaper_vue_vue_type_style_index_0_scoped_true_lang = "";
 const _sfc_main$1 = vue.defineComponent({
   name: "Morning",
   async setup() {
+    const moyuLog = vue.ref("");
     const marketStore = useMarket();
-    await marketStore.getMoyuList();
-    const { moyuStr } = marketStore;
-    return { moyuStr };
+    vue.onMounted(async () => {
+      await marketStore.getMoyuList();
+      console.log(marketStore);
+      const { moyu } = marketStore;
+      moyuLog.value = moyu;
+    });
+    vue.onServerPrefetch(async () => {
+      await marketStore.getMoyuList();
+      const { moyu } = marketStore;
+      moyuLog.value = moyu;
+    });
+    return {
+      moyuLog
+    };
   }
 });
 function _sfc_ssrRender$1(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "skill-detail" }, _attrs))} data-v-51e51e5e><div class="box-list" data-v-51e51e5e><p class="name" data-v-51e51e5e>1. \u6478\u9C7C\u65E5\u5FD7</p><div class="desc" data-v-51e51e5e><pre data-v-51e51e5e>          ${serverRenderer.ssrInterpolate(_ctx.moyuStr)}
+  _push(`<div${serverRenderer.ssrRenderAttrs(vue.mergeProps({ class: "skill-detail" }, _attrs))} data-v-5584a7a9><div class="box-list" data-v-5584a7a9><p class="name" data-v-5584a7a9>\u6478\u9C7C\u65E5\u5FD7:</p><div class="desc" data-v-5584a7a9><pre data-v-5584a7a9>          ${serverRenderer.ssrInterpolate(_ctx.moyuLog)}
         </pre></div></div></div>`);
 }
 const _sfc_setup$1 = _sfc_main$1.setup;
@@ -413,7 +410,7 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("src/views/morning-paper.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-var morningPaper = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-51e51e5e"]]);
+var morningPaper = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["ssrRender", _sfc_ssrRender$1], ["__scopeId", "data-v-5584a7a9"]]);
 var morningPaper$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   "default": morningPaper

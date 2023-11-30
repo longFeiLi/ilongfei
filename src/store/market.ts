@@ -1,30 +1,27 @@
-import { getFruitList, IFruitItem, getNotice } from '@/api/market';
+import { getNotice } from '@/api/market';
 import { defineStore } from 'pinia';
 
 export interface IMarketState {
-  fruitList: IFruitItem[];
   moyuStr: string;
 }
 
 export const useMarket = defineStore('market', {
   state(): IMarketState {
     return {
-      fruitList: [],
       moyuStr: ''
     };
   },
+  getters: {
+    moyu: (state) => {
+      console.log(state.moyuStr);
+      return state.moyuStr;
+    }
+  },
   actions: {
-    async getList() {
-      try {
-        const data = await getFruitList();
-        this.fruitList = data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
     async getMoyuList() {
       try {
         const data = await getNotice();
+        console.log(typeof data);
         this.moyuStr = data;
       } catch (error) {
         console.log(error);

@@ -9,7 +9,7 @@
     </router-view>
   </div>
   <div class="footer">
-    © 2022-2010 ilongfei.cn 版权所有
+    © 2023-2010 ilongfei.cn 版权所有
     <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备20025571号</a>
   </div>
 </template>
